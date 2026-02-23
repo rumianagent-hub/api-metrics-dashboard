@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-02-23T01:25:52.114Z",
+  "generatedAt": "2026-02-23T01:27:11.847Z",
   "source": "openclaw session jsonl usage records",
   "totals": {
-    "calls": 333,
-    "inputTokens": 2883681,
-    "outputTokens": 92361,
-    "cacheRead": 23258143,
+    "calls": 349,
+    "inputTokens": 3465435,
+    "outputTokens": 94444,
+    "cacheRead": 24854303,
     "cacheWrite": 1811901,
-    "totalTokens": 28046086,
-    "cost": 26.66999149999999
+    "totalTokens": 30226083,
+    "cost": 27.99655099999999
   },
   "daily": [
     {
@@ -21,11 +21,11 @@
     },
     {
       "date": "2026-02-23",
-      "calls": 147,
-      "inputTokens": 2883449,
-      "outputTokens": 21830,
-      "totalTokens": 13365439,
-      "cost": 7.182183750000002
+      "calls": 163,
+      "inputTokens": 3465203,
+      "outputTokens": 23913,
+      "totalTokens": 15545436,
+      "cost": 8.50874325
     }
   ],
   "models": [
@@ -41,11 +41,11 @@
     {
       "model": "gpt-5.3-codex",
       "provider": "Other",
-      "calls": 147,
-      "inputTokens": 2883449,
-      "outputTokens": 21830,
-      "totalTokens": 13365439,
-      "cost": 7.182183750000002
+      "calls": 163,
+      "inputTokens": 3465203,
+      "outputTokens": 23913,
+      "totalTokens": 15545436,
+      "cost": 8.50874325
     }
   ]
 }

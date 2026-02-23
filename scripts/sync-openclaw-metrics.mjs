@@ -28,13 +28,20 @@ function providerFromModel(model = '') {
   return 'Other'
 }
 
-const files = fs
-  .readdirSync(sessionsDir)
-  .filter((f) => f.endsWith('.jsonl'))
-  .map((f) => path.join(sessionsDir, f))
+const files = fs.existsSync(sessionsDir)
+  ? fs
+      .readdirSync(sessionsDir)
+      .filter((f) => f.endsWith('.jsonl'))
+      .map((f) => path.join(sessionsDir, f))
+  : []
 
 const byDay = new Map()
 const byModel = new Map()
+
+if (files.length === 0) {
+  console.log('No local OpenClaw session logs found in this environment; keeping existing public/metrics.json')
+  process.exit(0)
+}
 
 let totals = {
   calls: 0,
