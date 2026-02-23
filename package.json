@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "sync:metrics": "node scripts/sync-openclaw-metrics.mjs",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run sync:metrics && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

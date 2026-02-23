@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-02-23T01:25:52.114Z",
+  "source": "openclaw session jsonl usage records",
+  "totals": {
+    "calls": 333,
+    "inputTokens": 2883681,
+    "outputTokens": 92361,
+    "cacheRead": 23258143,
+    "cacheWrite": 1811901,
+    "totalTokens": 28046086,
+    "cost": 26.66999149999999
+  },
+  "daily": [
+    {
+      "date": "2026-02-21",
+      "calls": 186,
+      "inputTokens": 232,
+      "outputTokens": 70531,
+      "totalTokens": 14680647,
+      "cost": 19.487807749999998
+    },
+    {
+      "date": "2026-02-23",
+      "calls": 147,
+      "inputTokens": 2883449,
+      "outputTokens": 21830,
+      "totalTokens": 13365439,
+      "cost": 7.182183750000002
+    }
+  ],
+  "models": [
+    {
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "calls": 186,
+      "inputTokens": 232,
+      "outputTokens": 70531,
+      "totalTokens": 14680647,
+      "cost": 19.487807749999998
+    },
+    {
+      "model": "gpt-5.3-codex",
+      "provider": "Other",
+      "calls": 147,
+      "inputTokens": 2883449,
+      "outputTokens": 21830,
+      "totalTokens": 13365439,
+      "cost": 7.182183750000002
+    }
+  ]
+}
